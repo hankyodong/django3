@@ -70,7 +70,16 @@ TEMPLATES = [
 ]
 WSGI_APPLICATION = 'config.wsgi.application'
 
+# config > settings.py
 
+...
+STATIC_URL = 'static/'
+STATIC_DIRS = BASE_DIR / 'static'
+STATICFILES_DIRS = [
+    STATIC_DIRS,
+]
+STATIC_ROOT = BASE_DIR / '.static_root'
+...
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
