@@ -3,4 +3,7 @@ name = "todolist"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "django-cleanup>=9.0.0",
+    "pillow>=11.3.0",
+]
